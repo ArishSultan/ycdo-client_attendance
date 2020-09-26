@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+<head>
+  {{ HEAD }}
+
+  <script src="http://localhost:3000/es6-shim.js"></script>
+  <script src="http://localhost:3000/websdk.client.bundle.min.js"></script>
+  <script src="http://localhost:3000/fingerprint.sdk.min.js"></script>
+  <script>
+    window.fp = Fingerprint
+    window.dp = new Fingerprint.WebApi
+  </script>
+
+  <style>
+    html {
+      overflow: auto !important;
+    }
+  </style>
+</head>
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
+</body>
+</html>
